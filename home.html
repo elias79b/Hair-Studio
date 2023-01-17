@@ -42,13 +42,32 @@
                 </li>
                 <li>
                     <a href="#">MEET US</a>
-                </li>
-                
-                    
-                    
-                   
+                </li>     
             </ul>
         </nav>
     </div>
+<div id="menuBtn">
+    <img src="photo/menu.png" id="menu">
+</div>
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var menu = document.getElementById("menu")
+    var SideNav = document.getElementById("SIDE-Nav")
+    SideNav.style.right = "-200px"
+    menuBtn.onclick = function(){
+        if(SideNav.style.right == "-200px"){
+            SideNav.style.right = "0"
+            menu.src= "photo/close.png";
+        }
+        else{
+            SideNav.style.right = "-200px"
+            menu.src= "photo/menu.png";
+        }
+    }
+
+</script>
+
+
+
   </body>
 </html>
